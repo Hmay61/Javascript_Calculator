@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link href="./calculator.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="./calculator.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<!--whole frame-->
+		<div id="whole">
+			<!--head-->
+			<div id="copyright">
+				<h4>Electronic Calculator</h4>
+				<p>Made by Yue He</p>
+			</div><!--end of head-->
+
+			<!--show result-->
+			<div>
+				<input id="result" /disabled> 
+			</div><!--end of show result-->
+
+			<!--button part-->
+			<div>
+				<div class="part1">
+					<button id="ac" class="btn square">AC</button>
+					<button id="ce" class="btn square">Del</button>
+					<input id="percent" type="button" class="btn square" value="%" onclick="percent()">
+					<input id="divide" type="button" class="btn square" value="/" onclick="getResult();op(this)">
+				</div>
+
+				<div class="part1">
+					<input id="b7" type="button" class="btn circle" value="7">
+					<!--<button id="b7" class="btn circle">7</button>-->
+					<input id="b8" type="button" class="btn circle" value="8">
+					<input id="b9" type="button" class="btn circle" value="9">
+					<input id="times" type="button" class="btn square" value="*" onclick="getResult();op(this)"">
+				</div>
+
+				<div class="part1">
+					<input id="b4" type="button" class="btn circle" value="4">
+					<input id="b5" type="button" class="btn circle" value="5">
+					<input id="b6" type="button" class="btn circle" value="6">
+					<input id="minus" type="button" class="btn square" value="-" onclick="getResult();op(this)"">
+				</div>
+
+				<div class="part1">
+					<input id="b1" type="button" class="btn circle" value="1" >
+					<input id="b2" type="button" class="btn circle" value="2" >
+					<input id="b3" type="button" class="btn circle" value="3" >
+					<input id="add" type="button" class="btn square" value="+" onclick="getResult(); op(this)">
+				</div>
+
+				<div class="part1">
+					<input id="b0" type="button" class="btn circle" value="0">
+					<input id="decimal" type="button" class="btn circle" value="." onclick="decimal(this)">
+					<input id="positive" type="button" class="btn circle" value="+/-" onclick="change()">
+					<button id="equal" class="btn square" onclick="getResult()">=</button>
+				</div>
+
+			</div><!--end of button part-->
+			
+		</div><!--end whole frame-->
+	</body>
+</html>

@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Ewert|Alegreya);
+
+body{
+	background-image:url("https://pixabay.com/static/uploads/photo/2015/12/12/22/35/snowman-1090261_1280.jpg");
+	background-size: cover;	
+}
+
+/*whole*/
+#whole{
+	position: relative;
+	border:1px solid white;
+	margin:auto;
+	margin-top:100px;
+	width:320px;
+	height: 400px;
+	box-shadow: 0 5px 15px 5px rgba(255, 255, 255, 0.5);
+	border-radius: 40px;
+	/*background-color:white;
+    border-width:1px;
+    border-style:solid;
+    border-bottom-color:#aaa;
+    border-right-color:#aaa;
+    border-top-color:#ddd;
+    border-left-color:#ddd;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    width:320px;
+	height:400px;
+	/*margin-left: 200px;*/
+	/*margin:auto;
+	margin-top:100px;*/
+}
+
+h4,p{
+	color:white;
+	text-align:center;
+	font-family: 'Alegreya', serif;
+	margin-top: 12px;
+	margin-bottom:-10px;
+	font-size:18px;
+}
+p{
+	margin-bottom: 10px;
+	font-size: 10px;
+}
+
+/*show result part*/
+#result{
+	width: 280px;
+	margin-left: 16px;
+	height: 50px;
+	background-color:#AED6F1;
+	border-radius: 10px;
+	text-align: right;
+	font-size:40px; 
+	line-height: 50px;
+	color:white;
+}
+
+/*button part*/
+.part1{
+	margin-left:6px;
+	margin-top: 5px;
+	width: 300px;
+	height:50px;
+  	text-align: center;
+
+}
+.btn{
+	text-align: center;
+	width:60px;
+	height:40px;
+	outline: none;
+	font-size:20px;
+	margin-left:10px;
+	color:white;
+
+}
+.btn:hover{
+	background-color:#EC7063;
+	cursor: pointer;
+}
+.square{
+	border-radius: 10px;
+	background-color: #F7DC6F;
+}
+.circle{
+	border-radius: 20px;
+	background-color: #82E0AA;
+}
